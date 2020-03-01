@@ -1,0 +1,269 @@
+/* =================================================
+Author Name: Shakil Hossain
+Author URI: http://themeforest.net/shakilunique
+Template Name: Jalil
+Description: Jalil is a modern responsive business and personal tempalte, you can use this template for your business,corporate,agency and personal purpouse.
+====================================================*/   
+/* Section Title */
+.section-title span{
+	color:#3065B5;	
+}
+/* Button */
+.button:hover{
+	background:#3065B5;
+}
+.button.primary{
+    background: #3065B5;
+}
+/* Typed Cursor */
+.typed-cursor{
+	color:#3065B5;
+}
+/* Breadcrumbs */
+#breadcrumbs ul li.active a{
+	color:#3065B5;
+}
+/* Header */
+#header .contact i{
+	color:#3065B5;
+}
+#header .social a:hover,
+#header .social .active a{
+	background:#3065B5;
+}
+#header .logo span{
+	color:#3065B5;
+}
+#header .slicknav_nav a:hover{
+	background: #3065B5;
+}
+#header .slicknav_nav .slicknav_row:hover{
+	background: #3065B5;
+}
+#header .nav li:hover a, 
+#header .nav li.active a{
+	background: #3065B5;
+}
+#header .nav li .sub-menu li:hover a{
+	color:#3065B5;
+}
+#header .search li a{
+	color:#3065B5;
+}
+#header .nav li .sub-menu{
+	border-color:#3065B5;
+}
+#header .search-form i{
+	background: #3065B5;
+}
+
+/* Home Slider */
+#j-slider .slide-button .button.primary,
+#j-slider .slide-button .button:before{
+	background:#3065B5;
+}
+#j-slider .owl-nav div:hover{
+	background:#3065B5;
+}
+#j-slider .owl-dots .owl-dot span{
+	background: #3065B5;
+}
+#j-slider .owl-dots .owl-dot:hover span{
+	background:#3065B5;
+}
+#j-slider .owl-dots .owl-dot.active span{
+	background:#3065B5;
+}
+/* Statics */
+#statics .static-single.active{
+	background:#3065B5;
+}
+#statics .static-single i{
+	color: #3065B5;
+}
+/* About Us */
+#about-us .single-video i{
+	background: #3065B5;
+}
+#about-us .single-video::after{
+	background: #3065B5;
+}
+/* Service */
+#service .single-service.active,
+#service .single-service:hover{
+	background:#3065B5;
+}
+/* Team */
+#team .team-social li a{
+	background: #3065B5;
+}
+#team .single-team{
+	border-top-color:#3065B5;
+}
+#team .team-info{
+	background: #3065B5;
+}
+/* Project */
+#project .project-hover{
+	border-bottom-color: #3065B5;
+}
+#project .project-hover h4:hover a,
+#project .project-hover .button:hover i{
+	color:#3065B5;
+}
+/* Testimonial */
+#testimonial .testimonial-content{
+	border-bottom-color:#3065B5;
+}
+#testimonial .owl-item.active.center .testimonial-content{
+	border-top-color:#3065B5;
+	border-bottom-color:#3065B5;
+}
+#testimonial .testimonial-content::before{
+	color: #3065B5;
+}
+#testimonial .testimonial-info .arrow::before{
+	border-left-color:#3065B5;
+}
+#testimonial .owl-dots .owl-dot.active span{
+	background:#3065B5;
+}
+#testimonial .testimonial-info img {
+	border-color:#3065B5;
+}
+/* Blog */
+#blog .owl-dot.active span{
+	background: #3065B5;
+}
+#blog .blog-head .icon{
+	background: #3065B5;
+}
+#blog .blog-head span{
+	background: #3065B5;
+}
+#blog .single-blog .meta span i{
+	color:#3065B5;
+}
+#blog .single-blog .blog-info h4:hover a{
+	color:#3065B5;
+}
+#blog .single-blog .button {
+	color: #3065B5;
+}
+#blog .single-sidebar h2 span{
+	color:#3065B5;
+}
+#blog .latest .post-info p{
+	color:#3065B5;
+}
+#blog .latest .post-info a:hover{
+	color:#3065B5;
+}
+#blog .category ul li a i{
+	color: #3065B5;
+}
+#blog .tags ul li a{
+	background: #3065B5;
+}
+#blog .blog-share ul li.share i{
+	color:#3065B5;
+}
+#blog .blog-share ul li a{
+	background:#3065B5;
+}
+#blog .prev-next ul li a{
+	color:#3065B5;
+}
+#blog .pagination li:hover a,
+#blog .pagination li a:focus{
+	background:#3065B5;
+}
+#blog .pagination li.prev a,
+#blog .pagination li.next a,
+#blog .pagination li.active a {
+	background:#3065B5;
+}
+#blog .single-comments a{
+	color: #3065B5;
+}
+#blog .comments-form .form .button{
+	background: #3065B5;
+}
+/* Pricing */
+#pricing .single-table.active .price {
+	background: #3065B5;
+}
+#pricing .single-table.active .button{
+	background:#3065B5;
+}
+#pricing .single-table:hover .button{
+	background:#3065B5;
+}
+#skills-experience .single-skill .progress-bar {
+	background: #3065B5;
+}
+#skills-experience .skill-text i{
+	background:#3065B5;
+}
+/* Call To Action */
+#call-to-action .button:hover {
+	background: #3065B5;
+}
+/* Contact Form */
+#contact .form-group i{
+	color: #3065B5;
+}
+/* Cleints */
+#clients .owl-nav div {
+	background: #3065B5;
+}
+
+/* Personal Banner */
+#personal-banner .banner-text .info{
+	color:#3065B5;
+}
+/* About Me */
+#about-me .about-contact ul i{
+	color: #3065B5;
+}
+/* My SKill */
+#my-skill .col-md-6:nth-child(3n+1) .progress-bar{
+	background:#3065B5;
+}
+/* My Timeline */
+#my-timeline .timeline-inner:before{
+	background-color: #3065B5;
+}
+#my-timeline .single-timeline h2 span{
+	color: #3065B5;
+}
+#my-timeline .timeline-inner:before{
+	background-image: -webkit-linear-gradient(top,#EAF0F2 0%,#3065B5 8%,#3065B5 92%,#EAF0F2 100%);
+	background-image: -moz-linear-gradient(top,#EAF0F2 0%,#3065B5 8%,#3065B5 92%,#EAF0F2 100%);
+	background-image: -ms-linear-gradient(top,#EAF0F2 0%,#3065B5 8%,#3065B5 92%,#EAF0F2 100%);
+}
+.k-line{
+	background:#3065B5;
+}
+/* Footer Top */
+#footer-top .single-widget h2 {
+	border-bottom-color:#3065B5
+}
+#footer-top .single-widget .list i{
+	color: #3065B5;
+}
+#footer-top .logo span{
+	color:#3065B5;
+}
+#footer-top form button{
+	background:#3065B5;
+}
+#footer .copyright span{
+	color:#3065B5;
+}
+#footer .social a{
+	background: #3065B5;
+}
+#footer .social li:hover a{
+	border-color:#3065B5;
+}
