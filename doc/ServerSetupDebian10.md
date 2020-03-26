@@ -150,6 +150,52 @@ Reload the server
 daniel@casper:~$ sudo nginx -s reload
 ```
 
-Point Domain Name Provider's DNS Records to Server
+Get a TLS certificate and allow NGINX to serve traffic via https
 --------------------------------------------------------------------------------
 
+Install certbot and other required libraries
+```bash
+daniel@casper:~$ sudo apt install certbot python-certbot-nginx
+```
+
+Get a certificate, and modify nginx configuration to serve https in a single
+step.
+```bash
+daniel@casper:~$ sudo certbot --nginx
+```
+
+This will save the certificates in the following locations
+Certificate: `/etc/letsencrypt/live/ghostwrench.net/fullchain.pem`
+Key File: `/etc/letsencrypt/live/ghostwrench.net/privkey.pem`
+
+Open up the firewall on port for https (443)
+```bash
+daniel@casper:~$ sudo ufw allow https
+```
+
+It looks like nginx certificate installation failed, so this will probably 
+need to be done manually.
+
+Add the certificate location to the `/etc/nginx/nginx.conf` in the SSL settings 
+section.
+```
+ssl_certificate /etc/letsencrypt/live/ghostwrench.net/fullchain.pem;
+ssl_certificate_key /etc/letsencrypt/live/ghostwrench.net/privkey.pem;
+```
+
+Change the following values in the current site in sites-available similar to 
+the following:
+```
+listen 443 ssl default_server;
+listen [::]:443 ssl default_server;
+```
+
+Test the setup
+```bash
+daniel@casper:~$ sudo nginx -t
+```
+
+Restart the server
+```bash
+daniel@casper:~$ sudo nginx -s reload
+```
