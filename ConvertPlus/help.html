@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+    <style>
+      table {
+        max-width: 100%;
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 5px;
+        min-width: 50px;
+        border: 1px solid #111;
+        white-space: nowrap;
+      }
+      th, .sheet-header {
+        text-align: center;
+        background-color: #CCC;
+        font-style: bold;
+      }
+      .separator {
+        width: 50%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to ConvertPlus!</h1>
+    <p>
+      Thank you for choosing to install the ConvertPlus add-on for Google Sheets! Please read the
+      following quick-start designed to get you up and running as fast as possible.
+    </p>
+    <h2>Viewing this Quick Start Message</h2>
+    <p>
+      Clicking "Add-ons" > "ConvertPlus" > "Quick Start" will allow you to re-view this quick-start
+      message at any time.
+    <h2>What is ConvertPlus Exactly?</h2>
+    <p>
+      ConvertPlus extends the built in Google Sheets function "CONVERT" which allows conversion of one
+      quantity (number with a unit of measure) to another unit of measure. ConvertPlus extends this
+      function by adding:
+      <ol>
+        <li>More units</li>
+        <li>Explicit pre-fixes that can be added to any unit (e.g. [m]m, [c]m, [k]m)</li>
+        <li>Ability to use compond units (e.g. "mi/hr" "k[g] m / s^2")</li>
+        <li>Functions for adding, subtracting, multiplying, dividing, raising power of and
+            comparing equality of quantities</li>
+        <li>Ability to chain together all functions to avoid multiple cell calculations</li>
+      </ol>
+    </p>
+    <h2>Basic Unit Conversion</h2>
+    <p>
+      QCONVERT and QCONVERT2 are the direct equivalents of Google Sheets CONVERT, these functions
+      perform unit conversions on a physical quantity from one unit of measure to another. The
+      difference between the two flavors of this function is in how input is provided.
+    </p>
+    <h3>Example:</h3>
+    <table>
+      <tr>
+        <th></th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+      </tr>
+      <tr>
+        <td class="sheet-header">1</td>
+        <td>10</td>
+        <td>ft</td>
+        <td>--></td>
+        <td>=QCONVERT(A1:B1, E1)</td>
+        <td>in</td>
+      </tr>
+      <tr>
+        <td class="sheet-header">2</td>
+        <td>20</td>
+        <td>degC</td>
+        <td>--></td>
+        <td>=QCONVERT2(A2, B2, "degF")</td>
+        <td>degF</td>
+      </tr>
+    </table>
+    <p class="separator">&darr;</p>
+    <table>
+      <tr>
+        <th></th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+      </tr>
+      <tr>
+        <td class="sheet-header">1</td>
+        <td>10</td>
+        <td>ft</td>
+        <td>--></td>
+        <td>120</td>
+        <td>in</td>
+      </tr>
+      <tr>
+        <td class="sheet-header">2</td>
+        <td>20</td>
+        <td>degC</td>
+        <td>--></td>
+        <td>68</td>
+        <td>degF</td>
+      </tr>
+    </table>
+    <p>
+      You can see that QCONVERT takes the input quantity as a 2 cell range and QCONVERT2 takes the
+      input quantity as a separate magnitude and unit. Note that many of the functions supplied by
+      ConvertPlus follow this convention, the standard version takes the quantity as an array and
+      there is a second version that allows you to split the inputs. In most cases you should be
+      using the standard version, as it is more versatile (as you will see soon).
+    </p>
+    <h2>Unit Prefixes</h2>
+    <p>
+      ConvertPlus allow the use of prefixes on all units (e.g. milli -> "m"), but for purposes of
+      efficient computation, they must be put in brackets before the unit.
+    </p>
+    <h3>Example:</h3>
+    <table>
+      <tr>
+        <th></th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+      </tr>
+      <tr>
+        <td class="sheet-header">1</td>
+        <td>10</td>
+        <td>[k]m</td>
+        <td>--></td>
+        <td>=QCONVERT(A1:B1, E1)</td>
+        <td>[c]m</td>
+      </tr>
+    </table>
+    <p class="separator">&darr;</p>
+    <table>
+      <tr>
+        <th></th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+      </tr>
+      <tr>
+        <td class="sheet-header">1</td>
+        <td>10</td>
+        <td>[k]m</td>
+        <td>--></td>
+        <td>1000000</td>
+        <td>[c]m</td>
+      </tr>
+    </table>
+    <h2>Compound Units</h2>
+    <p>
+      Compound units can be created with any combination of units, powers denoted with the carrot
+      ( "^" ) and a numerator and denominator using the backslash ( "/" ). For instance the unit
+      "ohm" could be expressed in SI base units using "[k]g m^2 / A^2 sec^3".
+    </p>
+    <h3>Example:</h3>
+    <table>
+      <tr>
+        <th></th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+      </tr>
+      <tr>
+        <td class="sheet-header">1</td>
+        <td>1000</td>
+        <td>[k]m / hr</td>
+        <td>--></td>
+        <td>=QCONVERT(A1:B1, E1)</td>
+        <td>mi / min</td>
+      </tr>
+    </table>
+    <p class="separator">&darr;</p>
+    <table>
+      <tr>
+        <th></th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+      </tr>
+      <tr>
+        <td class="sheet-header">1</td>
+        <td>1000</td>
+        <td>[k]m / hr</td>
+        <td>--></td>
+        <td>10.35618654</td>
+        <td>mi / min</td>
+      </tr>
+    </table>
+  <h2>Operations on Quantities</h2>
+  <p>
+    Operation can be performed on quantities to get a resulting quantity in the correct units. The
+    following operation functions are available.
+    <ol>
+      <li>QADD, QADD2 --> Add</li>
+      <li>QSUB, QSUB2 --> Subtract</li>
+      <li>QMUL, QMUL2 --> Multiply</li>
+      <li>QDIV, QDIV2 --> Dividie</li>
+      <li>QPOW, QPOW2 --> Raise to an integer power</li>
+      <li>QEQ, QEQ2 --> Check for equality</li>
+    </ol>
+  </p>
+  <h3>Example:</h3>
+  <table>
+      <tr>
+        <th></th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+        <th>F</th>
+      </tr>
+      <tr>
+        <td class="sheet-header">1</td>
+        <td>10</td>
+        <td>[k]m</td>
+        <td>20</td>
+        <td>league</td>
+        <td>=QADD(A1:B1, C1:D1)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="sheet-header">2</td>
+        <td>1</td>
+        <td>mi</td>
+        <td>1.61</td>
+        <td>[k]m</td>
+        <td>=QSUB(A2:B2, C2:D2)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="sheet-header">3</td>
+        <td>1</td>
+        <td>ha</td>
+        <td>1</td>
+        <td>[m]m</td>
+        <td>=QMUL(A3:B3, C3:D3)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="sheet-header">4</td>
+        <td>100</td>
+        <td>m</td>
+        <td>20</td>
+        <td>sec</td>
+        <td>=QDIV(A4:B4, C4:D4)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="sheet-header">5</td>
+        <td>10</td>
+        <td>[c]m</td>
+        <td></td>
+        <td></td>
+        <td>=QPOW(A5:B5, C5:D5)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="sheet-header">6</td>
+        <td>1</td>
+        <td>[k]m</td>
+        <td>0.62137</td>
+        <td>mi</td>
+        <td>=QEQ(A6:B6, C6:D6)</td>
+        <td></td>
+      </tr>
+    </table>
+    <p class="separator">&darr;</p>
+    <table>
+      <tr>
+        <th></th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+        <th>F</th>
+      </tr>
+      <tr>
+        <td class="sheet-header">1</td>
+        <td>10</td>
+        <td>[k]m</td>
+        <td>20</td>
+        <td>league</td>
+        <td>121.12</td>
+        <td>[k]m</td>
+      </tr>
+      <tr>
+        <td class="sheet-header">2</td>
+        <td>1</td>
+        <td>mi</td>
+        <td>1.61</td>
+        <td>[k]m</td>
+        <td>-0.000408</td>
+        <td>mi</td>
+      </tr>
+      <tr>
+        <td class="sheet-header">3</td>
+        <td>1</td>
+        <td>ha</td>
+        <td>1</td>
+        <td>[m]m</td>
+        <td>10</td>
+        <td>m^3</td>
+      </tr>
+      <tr>
+        <td class="sheet-header">4</td>
+        <td>100</td>
+        <td>m</td>
+        <td>20</td>
+        <td>sec</td>
+        <td>5</td>
+        <td>m / sec</td>
+      </tr>
+      <tr>
+        <td class="sheet-header">5</td>
+        <td>10</td>
+        <td>[c]m</td>
+        <td></td>
+        <td></td>
+        <td>0.01</td>
+        <td>m^2</td>
+      </tr>
+      <tr>
+        <td class="sheet-header">6</td>
+        <td>1</td>
+        <td>[k]m</td>
+        <td>0.62137</td>
+        <td>mi</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+    </table>
+    <h2>Chaining Functions Together</h2>
+    <p>
+      Sometimes it is very useful to chain functions together, and this is possible with all of the
+      standard functions (e.g. QADD). The second version (e.g. QADD2) can be chained but only if
+      they are the innermost function. One reason you may want to chain functions is if an
+      operation does not output to your prefered units and you would like to convert back. Another
+      reason might be that you have to do more than one operation to get the result you want such
+      as calculating power dissipation in a circuit using "V^2 / R" (Voltage squared over
+      resistance).
+    </p>
+    <h3>Example:</h3>
+    <table>
+      <tr>
+        <th></th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+        <th>F</th>
+      </tr>
+      <tr>
+        <td class="sheet-header">1</td>
+        <td>1</td>
+        <td>acre</td>
+        <td>1</td>
+        <td>ft</td>
+        <td>=QMUL(A1:B1,C1:D1)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="sheet-header">2</td>
+        <td>1</td>
+        <td>acre</td>
+        <td>1</td>
+        <td>ft</td>
+        <td>=QCONVERT(QMUL(A2:B2, C2:D2), F2)</td>
+        <td>acre ft</td>
+      </tr>
+      <tr>
+        <td class="sheet-header">3</td>
+        <td>120</td>
+        <td>V</td>
+        <td>240</td>
+        <td>ohm</td>
+        <td>=QCONVERT(QMUL(QPOW(A3:B3, 2), C3:D3), F3)</td>
+        <td>W</td>
+      </tr>
+    </table>
+    <p class="separator">&darr;</p>
+    <table>
+      <tr>
+        <th></th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+        <th>F</th>
+      </tr>
+      <tr>
+        <td class="sheet-header">1</td>
+        <td>1</td>
+        <td>acre</td>
+        <td>1</td>
+        <td>ft</td>
+        <td>1233.486771</td>
+        <td>m^3</td>
+      </tr>
+      <tr>
+        <td class="sheet-header">2</td>
+        <td>1</td>
+        <td>acre</td>
+        <td>1</td>
+        <td>ft</td>
+        <td>1</td>
+        <td>acre ft</td>
+      </tr>
+      <tr>
+        <td class="sheet-header">3</td>
+        <td>120</td>
+        <td>V</td>
+        <td>240</td>
+        <td>ohm</td>
+        <td>60</td>
+        <td>W</td>
+      </tr>
+    </table>
+    <h2>Available Units</h2>
+    <p>
+      A full list of available units, along with a short description of each one can be generated
+      from the main add-on menu.
+    </p>
+    <p>
+      "Add-ons" > "ConvertPlus" > "Reference"
+    </p>
+    <p>
+      Pick a sheet name where you would like to generate the reference sheet and click "OK". This
+      will generate the reference sheet.
+    </p>
+    <h2>Subscription</h2>
+    <p>
+      A free 30 day trial is supplied with this add-on, durring this time you will have full access
+      to all functions. Afterwards this period ends and if you would like to continue using
+      ConvertPlus, you can subscribe by clicking:
+    </p>
+    <p>
+      "Add-ons" > "ConvertPlus" > "Subscription"
+    </p>
+    <p>
+      This will open a sidebar that will allow you to directly enter a credit card and select a
+      payment plan. Your subscription can be cancelled at any time by pressing the button labeled
+      "Cancel Subscription" or by selecting "No subscription" as your payment plan.
+    </p>
+  </body>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+</html>
