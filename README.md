@@ -1,2 +1,2 @@
-# ghostwrench.github.io
-Website Repository for Ghost Wrench
+# GhostWrench.github.io
+Website repository for GhostWrench organization
