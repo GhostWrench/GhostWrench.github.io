@@ -6,264 +6,264 @@ Description: Jalil is a modern responsive business and personal tempalte, you ca
 ====================================================*/   
 /* Section Title */
 .section-title span{
-	color:#3065B5;	
+	color:#0096FF;	
 }
 /* Button */
 .button:hover{
-	background:#3065B5;
+	background:#0096FF;
 }
 .button.primary{
-    background: #3065B5;
+    background: #0096FF;
 }
 /* Typed Cursor */
 .typed-cursor{
-	color:#3065B5;
+	color:#0096FF;
 }
 /* Breadcrumbs */
 #breadcrumbs ul li.active a{
-	color:#3065B5;
+	color:#0096FF;
 }
 /* Header */
 #header .contact i{
-	color:#3065B5;
+	color:#0096FF;
 }
 #header .social a:hover,
 #header .social .active a{
-	background:#3065B5;
+	background:#0096FF;
 }
 #header .logo span{
-	color:#3065B5;
+	color:#0096FF;
 }
 #header .slicknav_nav a:hover{
-	background: #3065B5;
+	background: #0096FF;
 }
 #header .slicknav_nav .slicknav_row:hover{
-	background: #3065B5;
+	background: #0096FF;
 }
 #header .nav li:hover a, 
 #header .nav li.active a{
-	background: #3065B5;
+	background: #0096FF;
 }
 #header .nav li .sub-menu li:hover a{
-	color:#3065B5;
+	color:#0096FF;
 }
 #header .search li a{
-	color:#3065B5;
+	color:#0096FF;
 }
 #header .nav li .sub-menu{
-	border-color:#3065B5;
+	border-color:#0096FF;
 }
 #header .search-form i{
-	background: #3065B5;
+	background: #0096FF;
 }
 
 /* Home Slider */
 #j-slider .slide-button .button.primary,
 #j-slider .slide-button .button:before{
-	background:#3065B5;
+	background:#0096FF;
 }
 #j-slider .owl-nav div:hover{
-	background:#3065B5;
+	background:#0096FF;
 }
 #j-slider .owl-dots .owl-dot span{
-	background: #3065B5;
+	background: #0096FF;
 }
 #j-slider .owl-dots .owl-dot:hover span{
-	background:#3065B5;
+	background:#0096FF;
 }
 #j-slider .owl-dots .owl-dot.active span{
-	background:#3065B5;
+	background:#0096FF;
 }
 /* Statics */
 #statics .static-single.active{
-	background:#3065B5;
+	background:#0096FF;
 }
 #statics .static-single i{
-	color: #3065B5;
+	color: #0096FF;
 }
 /* About Us */
 #about-us .single-video i{
-	background: #3065B5;
+	background: #0096FF;
 }
 #about-us .single-video::after{
-	background: #3065B5;
+	background: #0096FF;
 }
 /* Service */
 #service .single-service.active,
 #service .single-service:hover{
-	background:#3065B5;
+	background:#0096FF;
 }
 /* Team */
 #team .team-social li a{
-	background: #3065B5;
+	background: #0096FF;
 }
 #team .single-team{
-	border-top-color:#3065B5;
+	border-top-color:#0096FF;
 }
 #team .team-info{
-	background: #3065B5;
+	background: #0096FF;
 }
 /* Project */
 #project .project-hover{
-	border-bottom-color: #3065B5;
+	border-bottom-color: #0096FF;
 }
 #project .project-hover h4:hover a,
 #project .project-hover .button:hover i{
-	color:#3065B5;
+	color:#0096FF;
 }
 /* Testimonial */
 #testimonial .testimonial-content{
-	border-bottom-color:#3065B5;
+	border-bottom-color:#0096FF;
 }
 #testimonial .owl-item.active.center .testimonial-content{
-	border-top-color:#3065B5;
-	border-bottom-color:#3065B5;
+	border-top-color:#0096FF;
+	border-bottom-color:#0096FF;
 }
 #testimonial .testimonial-content::before{
-	color: #3065B5;
+	color: #0096FF;
 }
 #testimonial .testimonial-info .arrow::before{
-	border-left-color:#3065B5;
+	border-left-color:#0096FF;
 }
 #testimonial .owl-dots .owl-dot.active span{
-	background:#3065B5;
+	background:#0096FF;
 }
 #testimonial .testimonial-info img {
-	border-color:#3065B5;
+	border-color:#0096FF;
 }
 /* Blog */
 #blog .owl-dot.active span{
-	background: #3065B5;
+	background: #0096FF;
 }
 #blog .blog-head .icon{
-	background: #3065B5;
+	background: #0096FF;
 }
 #blog .blog-head span{
-	background: #3065B5;
+	background: #0096FF;
 }
 #blog .single-blog .meta span i{
-	color:#3065B5;
+	color:#0096FF;
 }
 #blog .single-blog .blog-info h4:hover a{
-	color:#3065B5;
+	color:#0096FF;
 }
 #blog .single-blog .button {
-	color: #3065B5;
+	color: #0096FF;
 }
 #blog .single-sidebar h2 span{
-	color:#3065B5;
+	color:#0096FF;
 }
 #blog .latest .post-info p{
-	color:#3065B5;
+	color:#0096FF;
 }
 #blog .latest .post-info a:hover{
-	color:#3065B5;
+	color:#0096FF;
 }
 #blog .category ul li a i{
-	color: #3065B5;
+	color: #0096FF;
 }
 #blog .tags ul li a{
-	background: #3065B5;
+	background: #0096FF;
 }
 #blog .blog-share ul li.share i{
-	color:#3065B5;
+	color:#0096FF;
 }
 #blog .blog-share ul li a{
-	background:#3065B5;
+	background:#0096FF;
 }
 #blog .prev-next ul li a{
-	color:#3065B5;
+	color:#0096FF;
 }
 #blog .pagination li:hover a,
 #blog .pagination li a:focus{
-	background:#3065B5;
+	background:#0096FF;
 }
 #blog .pagination li.prev a,
 #blog .pagination li.next a,
 #blog .pagination li.active a {
-	background:#3065B5;
+	background:#0096FF;
 }
 #blog .single-comments a{
-	color: #3065B5;
+	color: #0096FF;
 }
 #blog .comments-form .form .button{
-	background: #3065B5;
+	background: #0096FF;
 }
 /* Pricing */
 #pricing .single-table.active .price {
-	background: #3065B5;
+	background: #0096FF;
 }
 #pricing .single-table.active .button{
-	background:#3065B5;
+	background:#0096FF;
 }
 #pricing .single-table:hover .button{
-	background:#3065B5;
+	background:#0096FF;
 }
 #skills-experience .single-skill .progress-bar {
-	background: #3065B5;
+	background: #0096FF;
 }
 #skills-experience .skill-text i{
-	background:#3065B5;
+	background:#0096FF;
 }
 /* Call To Action */
 #call-to-action .button:hover {
-	background: #3065B5;
+	background: #0096FF;
 }
 /* Contact Form */
 #contact .form-group i{
-	color: #3065B5;
+	color: #0096FF;
 }
 /* Cleints */
 #clients .owl-nav div {
-	background: #3065B5;
+	background: #0096FF;
 }
 
 /* Personal Banner */
 #personal-banner .banner-text .info{
-	color:#3065B5;
+	color:#0096FF;
 }
 /* About Me */
 #about-me .about-contact ul i{
-	color: #3065B5;
+	color: #0096FF;
 }
 /* My SKill */
 #my-skill .col-md-6:nth-child(3n+1) .progress-bar{
-	background:#3065B5;
+	background:#0096FF;
 }
 /* My Timeline */
 #my-timeline .timeline-inner:before{
-	background-color: #3065B5;
+	background-color: #0096FF;
 }
 #my-timeline .single-timeline h2 span{
-	color: #3065B5;
+	color: #0096FF;
 }
 #my-timeline .timeline-inner:before{
-	background-image: -webkit-linear-gradient(top,#EAF0F2 0%,#3065B5 8%,#3065B5 92%,#EAF0F2 100%);
-	background-image: -moz-linear-gradient(top,#EAF0F2 0%,#3065B5 8%,#3065B5 92%,#EAF0F2 100%);
-	background-image: -ms-linear-gradient(top,#EAF0F2 0%,#3065B5 8%,#3065B5 92%,#EAF0F2 100%);
+	background-image: -webkit-linear-gradient(top,#EAF0F2 0%,#0096FF 8%,#0096FF 92%,#EAF0F2 100%);
+	background-image: -moz-linear-gradient(top,#EAF0F2 0%,#0096FF 8%,#0096FF 92%,#EAF0F2 100%);
+	background-image: -ms-linear-gradient(top,#EAF0F2 0%,#0096FF 8%,#0096FF 92%,#EAF0F2 100%);
 }
 .k-line{
-	background:#3065B5;
+	background:#0096FF;
 }
 /* Footer Top */
 #footer-top .single-widget h2 {
-	border-bottom-color:#3065B5
+	border-bottom-color:#0096FF
 }
 #footer-top .single-widget .list i{
-	color: #3065B5;
+	color: #0096FF;
 }
 #footer-top .logo span{
-	color:#3065B5;
+	color:#0096FF;
 }
 #footer-top form button{
-	background:#3065B5;
+	background:#0096FF;
 }
 #footer .copyright span{
-	color:#3065B5;
+	color:#0096FF;
 }
 #footer .social a{
-	background: #3065B5;
+	background: #0096FF;
 }
 #footer .social li:hover a{
-	border-color:#3065B5;
+	border-color:#0096FF;
 }
